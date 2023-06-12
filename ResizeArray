@@ -1,0 +1,13 @@
+Code:
+String[] OldVar = {"Exemple","Exemple2"}
+String[] newVar = BD.var.resizeArray(OldVar);
+
+Method:
+
+public String[][] resizeArray (String[] oldArray) {
+   int oldSize = oldArray.length;
+   String[] newArray = new String[oldSize+1];
+   System.arraycopy(oldArray, 0, newArray, 0, 3);
+    oldArray = null;
+    return newArray; }
+}

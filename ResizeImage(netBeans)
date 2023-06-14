@@ -1,0 +1,11 @@
+icoBackground.setIcon(BD.var.ResizeImage("user.png", icoBackground, 50 , 50)); //Put this in "customize code" before the last line
+
+
+Method:
+
+ImageIcon imageIcon = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/img/"+NomeDaImage)));
+        Image img1=imageIcon.getImage();
+        Image img2=img1.getScaledInstance(Altura,Largura,Image.SCALE_SMOOTH);
+        ImageIcon a=new ImageIcon(img2);
+        return a;
+}
